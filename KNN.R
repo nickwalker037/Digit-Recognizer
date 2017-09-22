@@ -1,9 +1,9 @@
 library(readr)
 library(class)
 
-train <- read_csv("/Users/nwalker018/Desktop/Datasets/Digit Recognizer/Digit_Recognizer_Train.csv")
+train <- read_csv(".../Digit_Recognizer_Train.csv")
 
-test <- read_csv("/Users/nwalker018/Desktop/Datasets/Digit Recognizer/Digit_Recognizer_Test.csv")
+test <- read_csv(".../Digit_Recognizer_Test.csv")
 
 
 train <- train[1:3000,]
@@ -19,4 +19,4 @@ submission <- data.frame(ImageId=1:nrow(test),Label=Knn)
 head(submission)
 dim(submission)
 
-write_csv(submission,"/Users/nwalker018/Desktop/Datasets/Digit Recognizer/KNN_Submission_1.csv")
+write_csv(submission,".../KNN_Submission_1.csv")
