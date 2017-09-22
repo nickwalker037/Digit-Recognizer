@@ -2,8 +2,8 @@ library(readr)
 library(class)
 library(randomForest)
 
-train <- read_csv("/Users/nwalker018/Desktop/Datasets/Digit Recognizer/Digit_Recognizer_Train.csv")
-test <- read_csv("/Users/nwalker018/Desktop/Datasets/Digit Recognizer/Digit_Recognizer_Test.csv")
+train <- read_csv(".../Digit_Recognizer_Train.csv")
+test <- read_csv(".../Digit_Recognizer_Test.csv")
 
 nrow(train)
 ncol(train)
@@ -16,4 +16,4 @@ submission <- data.frame(ImageId=1:nrow(test),Label=round(rFor$test$predicted))
 
 head(submission)
 
-write.csv(submission, "/Users/nwalker018/Desktop/Datasets/Digit Recognizer/randomForest_1.csv")
+write.csv(submission, ".../randomForest_1.csv")
