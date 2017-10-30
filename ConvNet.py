@@ -30,7 +30,7 @@ def bias_variable(shape):
     
 # Define Convolution with stride of 1 and zero padding
 def conv2d(x, W):
-    return tf.nn.conv2d(x, W, strides=[1, 1, 1, 1], padding = 'SAME')
+    return tf.nn.conv2d(x, W, strides=[1, 1, 1, 1], padding = 'SAME') # strides --> [batch, height, width, channel] (channel means depth of convolution) (use -1 for batch as a placeholder that adjusts the size as necessary to match the size needed for the full tensor)
 
 # Define Pooling as max pooling over 2x2 blocks:
 def max_pool_2x2(x):
