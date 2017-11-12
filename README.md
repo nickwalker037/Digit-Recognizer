@@ -1,6 +1,6 @@
 
 
-The Softmax Regression and Convolutional Neural Network files use tensorflow's built in tutorial MNIST dataset, while KNN and randomForest files take data from the Kaggle Competition "Digit Recognizer" and are coded using scikit-learn. All of the accuracy scores are listed below: 
+The Softmax Regression and Convolutional Neural Network files use tensorflow's built in tutorial MNIST dataset, while KNN and randomForest files take data from the Kaggle Competition "Digit Recognizer". All of the accuracy scores are listed below: 
 
 Submissions Include:
   - Convolutional Neural Network: 0.9896
